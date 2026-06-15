@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EMBO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at center, #121212 0%, #0f1115 100%);
+    overflow:hidden;
+}
+
+/* 🔴 EXACT SAME GLOW STYLE */
+.circle1{
+    position:absolute;
+    width:320px;
+    height:320px;
+    background:radial-gradient(circle, #ff3b30 0%, #b71c1c 60%, transparent 80%);
+    border-radius:50%;
+    filter:blur(60px);
+    top:-80px;
+    left:-80px;
+    opacity:0.9;
+}
+
+.circle2{
+    position:absolute;
+    width:280px;
+    height:280px;
+    background:radial-gradient(circle, #ff1744 0%, #8e0000 60%, transparent 80%);
+    border-radius:50%;
+    filter:blur(70px);
+    bottom:-80px;
+    right:-80px;
+    opacity:0.85;
+}
+
+/* CARD SAME STYLE */
+.card{
+    width:400px;
+    padding:40px;
+    text-align:center;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    color:white;
+
+    animation:fade 1s ease;
+}
+
+.logo{
+    font-size:80px;
+    margin-bottom:10px;
+}
+
+h1{
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+p{
+    color:#aaa;
+}
+
+.tag{
+    margin-top:10px;
+    color:#ff3b30;
+    font-size:13px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:12px;
+    background:#ff3b30;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,59,48,0.4);
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="card">
+
+    <div class="logo">🚑</div>
+
+    <h1>EMBO</h1>
+
+    <p>Smart Emergency Ambulance System</p>
+
+    <div class="tag">Fast • Real-Time • Reliable</div>
+
+    <button onclick="window.location.href='login.html'">
+        Get Started
+    </button>
+
+</div>
+
+</body>
+</html>
